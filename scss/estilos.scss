@@ -1,0 +1,121 @@
+@import "utilities/variables";
+
+body{
+    background-image: url(../img/bg.jpg);
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 2rem;
+    nav{
+        .barraNavegacion{
+            text-align: center;
+            ;
+        }
+        .marca{
+            text-decoration: none;
+            color: $color-marca;
+            font-weight: 700;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            font-size: 2rem;
+            justify-content: center; 
+            text-align: center;
+            padding-bottom: 0.2rem;
+            &:hover{transition: 0.5s;
+                transform: scale(1.2);
+                animation-duration: 0.5s;
+                color: $color-hover;
+            }
+        }
+        ul{
+            li{
+                margin: 0rem 1rem 0rem 1rem;
+                &:hover{
+                    transition: 0.5s;
+                    transform: scale(1.2);
+                    animation-duration: 0.5s;
+        
+                }
+            }   
+        }
+        .slogan{
+            font-weight: 900;
+        }
+    }
+    main{
+        padding-bottom: 2rem;
+        .fondo{
+            background-image: url("/img/bg.jpg");            
+        }
+        h1{
+            color: $color-h1;
+            padding-top: 0.8rem;
+            padding-bottom: 1rem;
+            text-align: center;
+            font-size: 1rem;
+            &:hover{transition: 1s;
+                transform: scale(1.5);
+                animation-duration: 1s;
+                color: grey;}
+        }
+        h2{
+            text-align: center;
+            font-size: 0.8rem;
+        }
+        p{
+            text-align: center;
+        }
+    }
+    footer{
+        position: absolute;
+        bottom: 0;
+        .derechos{
+            padding-top: 0.5rem;
+            justify-content: center;
+            text-align: center;
+            font-size: 0.7rem;
+        }
+        .redes{
+            text-align: center;
+            justify-content: center;
+            padding-bottom: 0.4rem;
+            .iconitos{
+                &:hover{
+                transition: 0.7s;
+                transform: scale(1.3);
+                animation-duration: 0.7s;
+                color: red;
+                background-color: black;
+                }
+            }
+        }
+    }
+}
+
+.imagen{
+    justify-content: center;
+    text-align: center;
+    justify-self: center;
+    align-items: center;
+    padding: 0.5rem;
+    max-width: 3rem;
+}
+
+.formulario{
+    padding: 1rem;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.img-fluid{
+    max-height: 33;
+    max-width: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .mediaPic {
+        width: 100vw;
+    }
+}
